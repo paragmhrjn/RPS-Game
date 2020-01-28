@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    height: 100vh;
+    background-color: rgb(28, 136, 76);
+    font-family: Snell Roundhand, cursive;
+}
+
+.score {
+    color: rgb(230, 230, 230);
+    height:25vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.score h2{
+    font-size: 30px;
+    border: 3px solid whitesmoke;
+    padding:10px;
+    border-radius: 0.4em;
+    border-bottom: cadetblue;
+}
+
+
+.score p {
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+}
+
+.intro {
+    color: rgb(230, 230, 230);
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: opacity 0.5s ease;
+}
+
+.intro h1 {
+    font-size: 50px;
+    border: 3px solid whitesmoke;
+    padding:10px;
+    border-radius: 0.4em;
+    border-bottom: cadetblue;
+
+}
+
+.intro button, .match button{
+    width:180px;
+    height: 50px;
+    background: none;
+    border: none;
+    font-size: 15px;
+    color: rgb(230, 230, 230);
+    background: rgb(9, 61, 57);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.match{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity 0.5s ease 0.5s;
+}
+
+.winner{
+    color: rgb(230, 230, 230);
+    text-align: center;
+    font-size: 50px;
+}
+
+.hands, .option {
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.player-hand{
+    transform:rotateY(180deg);
+}
+
+div.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+div.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
